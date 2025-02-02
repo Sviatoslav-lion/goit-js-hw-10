@@ -1,0 +1,72 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+.input-lable{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.ms {
+    margin-top: 8px;
+    width: 326px;
+
+}
+.window-legend {
+    
+}
+.fielset {
+
+    padding: 0;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin: 0;
+    width: 302px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    stroke-width: 1px;
+    stroke: #808080;
+    border: 1px solid #808080;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+   
+}
+.fielset:hover {
+    border: 1px solid #000;
+}
+.radio-lable {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2e2f42;
+
+}
+.radio-btn {
+    border: 1px solid #808080;
+}
+.formbtm {
+    width: 100%;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: center;
+}
