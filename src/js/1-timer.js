@@ -35,13 +35,20 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // активація кнопки
     startButton.addEventListener("click", () => {
+        if (!selectedDate || selectedDate <= new Date()) {
+            iziToast.error({
+                title: 'Error',
+                message: 'Invalid date selected!',
+                position: 'topRight'
+            });
+            return;
+        }
         clearInterval(countdownInterval);
         countdownInterval = setInterval(updateTimer, 1000);
         startButton.disabled = true;
     
         // Блокуємо можливість вибору дати
         dateInput.disabled = true; // Блокує input
-        picker.destroy(); // Повністю відключає Flatpickr
     });
     
     
